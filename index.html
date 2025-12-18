@@ -1,662 +1,353 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <!-- ============================================== -->
-    <!-- TECHNICAL SEO & PERFORMANCE OPTIMIZATION -->
-    <!-- ============================================== -->
-    
-    <!-- Charset & Viewport -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.get-fizzclean.site/">
-
-    <!-- Hreflang Tags -->
-    <link rel="alternate" hreflang="en-US" href="https://www.get-fizzclean.site/">
-    <link rel="alternate" hreflang="x-default" href="https://www.get-fizzclean.site/">
-
-    <!-- Primary SEO Tags -->
-    <title>FizzClean™ Official Site | Advanced Cleaning Formula</title>
-    <meta name="title" content="FizzClean™ Official Site | Advanced Cleaning Formula">
-    <meta name="description" content="Discover FizzClean™, the #1 natural formula. Fast shipping to US, UK, CA, AU, NZ & more.">
-    <meta name="keywords" content="fizzclean, fizzclean formula, cleaning supplement, fizz clean">
-    <meta name="author" content="FizzClean Official">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="product">
-    <meta property="og:url" content="https://www.get-fizzclean.site/">
-    <meta property="og:site_name" content="FizzClean Official Store">
-    <meta property="og:title" content="FizzClean™ - Advanced Formula">
-    <meta property="og:description" content="Safe, natural support. 70% OFF Limited Time Offer.">
-    <meta property="og:image" content="images/fizzclean.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancio - Una nueva forma de apoyar el adelgazamiento</title>
     
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/faviconV2.png" onerror="this.href='https://placehold.co/32x32/CD2280/ffffff?text=F'">
-    <link rel="apple-touch-icon" href="images/faviconV2.png">
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
     
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        
-        /* Custom Colors */
-        .text-brand-primary { color: #CD2280; }
-        .bg-brand-primary { background-color: #CD2280; }
-        .border-brand-primary { border-color: #CD2280; }
-        .hover-bg-brand-primary:hover { background-color: #a31b66; } 
-        
-        .bg-black-bar { background-color: #000000; }
-        .check-icon { color: #CD2280; }
-        
-        /* Smooth Scrolling & Custom Scrollbar */
+        /* Smooth scrolling */
         html { scroll-behavior: smooth; }
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #f1f1f1; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
-
-        /* Animation */
-        @keyframes fadeInUp {
+        
+        /* Custom animations */
+        @keyframes fade-in-up {
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .animate-fade-in { animation: fadeInUp 0.4s ease-out forwards; }
-
-        /* Country Button Hover Effect */
-        .country-card {
-            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .country-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-            border-color: #CD2280;
-        }
+        .animate-fade-in { animation: fade-in-up 0.5s ease-out forwards; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased selection:bg-pink-100 selection:text-pink-900">
+<body class="min-h-screen bg-slate-50 font-sans selection:bg-emerald-200 text-slate-900">
 
-    <script type="text/javascript">
-        (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "umc1c7buh3");
-    </script>
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="bg-emerald-600 p-1.5 rounded-lg">
+                    <i data-lucide="leaf" class="text-white w-4 h-4 md:w-5 md:h-5"></i>
+                </div>
+                <span class="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">Balancio</span>
+            </div>
+            <!-- Removed Select Region Button -->
+        </div>
+    </nav>
 
-    <!-- Main Container -->
-    <div class="w-full mx-auto min-h-screen flex flex-col relative bg-white shadow-xl max-w-[1440px]">
+    <!-- Hero Section -->
+    <header class="relative bg-white overflow-hidden">
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 md:w-96 md:h-96 bg-emerald-100 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-60 h-60 md:w-80 md:h-80 bg-blue-50 rounded-full blur-3xl opacity-50 pointer-events-none"></div>
         
-        <!-- STICKY HEADER WRAPPER -->
-        <div class="sticky top-0 z-50 w-full bg-white shadow-sm">
-            
-            <!-- 1. ALERT BAR -->
-            <div class="bg-black-bar text-white text-center py-2.5 px-4 w-full">
-                <span class="text-xs md:text-sm font-bold uppercase tracking-wide leading-tight">
-                    LIMITED TIME OFFER | 70% OFF FizzClean Toilet Powder
-                </span>
-            </div>
-
-            <!-- 2. LOGO HEADER -->
-            <header class="py-4 px-6 md:px-12 border-b border-gray-100 bg-white">
-                <div class="flex items-center justify-center md:justify-start gap-2 cursor-pointer max-w-7xl mx-auto" onclick="window.scrollTo(0,0)">
-                    <img src="images/fizzclean-logo.png" alt="FizzClean Logo" class="h-10 md:h-12 w-auto object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                    <!-- Fallback -->
-                    <div class="text-3xl font-black tracking-tighter text-gray-900 uppercase hidden">
-                        FIZZ<span class="text-brand-primary">CLEAN</span>
-                    </div>
-                </div>
-            </header>
+        <div class="max-w-4xl mx-auto px-4 pt-8 pb-8 md:pt-16 md:pb-12 relative z-10 text-center animate-fade-in">
+            <!-- Removed New Release Tag -->
+            <h1 data-i18n="hero_title" class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight mb-3 md:mb-5">
+                Una nueva forma de apoyar <span class="text-emerald-600">el adelgazamiento</span>
+            </h1>
+            <p data-i18n="hero_desc" class="text-base md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed px-2">
+                Balancio es un suplemento nutricional desarrollado para ayudar al cuerpo a utilizar la grasa como fuente de energía, respetando los procesos naturales del metabolismo.
+            </p>
         </div>
+    </header>
 
-        <!-- MAIN CONTENT -->
-        <main class="flex-1 max-w-7xl mx-auto w-full px-5 py-8 md:px-8 md:py-16 lg:px-12">
-            
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
-                
-                <!-- LEFT COLUMN (Product Image) -->
-                <div class="lg:col-span-6 flex justify-center lg:justify-end">
-                    <div class="relative w-full max-w-md lg:max-w-full">
-                        <div class="absolute inset-0 bg-pink-50 rounded-full filter blur-3xl opacity-30 transform scale-90"></div>
-                        <img src="images/fizzclean.png" 
-                             alt="FizzClean Bottle" 
-                             class="relative w-full h-auto object-contain drop-shadow-2xl hover:scale-[1.02] transition-transform duration-500 ease-out z-10">
-                    </div>
-                </div>
-
-                <!-- RIGHT COLUMN (Sales Copy) -->
-                <div class="lg:col-span-6 flex flex-col text-center lg:text-left">
-                    
-                    <!-- Star Rating -->
-                    <div class="flex items-center justify-center lg:justify-start mb-5 animate-fade-in" style="animation-delay: 0.1s;">
-                        <div class="flex text-yellow-400 text-lg gap-1">
-                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                        </div>
-                        <span class="ml-3 text-gray-600 font-bold text-sm tracking-wide" data-i18n="rating_text">4.7 | 1000+ Verified Reviews</span>
-                    </div>
-
-                    <!-- Main Headline -->
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight text-gray-900 mb-4 tracking-tight uppercase animate-fade-in" style="animation-delay: 0.2s;" data-i18n="headline">
-                        Insta-Action FizzClean Foam for Sparkling Clean Toilet with Zero Effort
-                    </h1>
-
-                    <!-- Subheadline -->
-                    <p class="text-lg sm:text-xl text-gray-600 font-medium leading-relaxed mb-6 animate-fade-in" style="animation-delay: 0.3s;" data-i18n="subheadline_main">
-                        Let foam handle the dirty work for you – keep your toilet spotless without lifting a finger!
+    <!-- Product Details Section -->
+    <section class="py-8 md:py-12 px-4 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-6 md:gap-10 items-center">
+                <div class="order-2 md:order-1 space-y-3 md:space-y-5">
+                    <h2 data-i18n="sect1_title" class="text-2xl md:text-3xl font-bold text-slate-800">Equilibrio Natural</h2>
+                    <p data-i18n="sect1_desc1" class="text-sm md:text-base text-slate-600 leading-relaxed">
+                        Su fórmula fue pensada para personas que desean perder peso de forma equilibrada, sin recurrir a dietas extremas, procedimientos invasivos o soluciones temporales.
                     </p>
-                    
-                    <!-- Feature Badges -->
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8 animate-fade-in" style="animation-delay: 0.4s;">
-                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-gray-100 text-gray-700 border border-gray-200">
-                             <i class="fas fa-shipping-fast mr-1.5 text-gray-500"></i> FAST SHIPPING
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-gray-100 text-gray-700 border border-gray-200">
-                             <i class="fas fa-shield-alt mr-1.5 text-gray-500"></i> 30-DAY MONEY BACK
-                        </span>
-                        <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-green-50 text-green-700 border border-green-100">
-                             <span class="w-2 h-2 bg-green-500 rounded-full mr-1.5 animate-pulse"></span> In Stock
-                        </span>
-                         <span class="inline-flex items-center px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wider bg-brand-primary text-white shadow-lg shadow-pink-200" data-i18n="discount_badge">
-                             -70% Discount
-                        </span>
-                    </div>
-
-                    <!-- Bullet Points -->
-                    <div class="w-full flex justify-center lg:justify-start mb-8 animate-fade-in" style="animation-delay: 0.5s;">
-                        <ul class="space-y-4 text-left">
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-2xl check-icon mt-0.5"></i>
-                                <span class="text-gray-700 text-lg font-medium leading-snug" data-i18n="benefit_1">Deep cleans 100% of your toilet</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-2xl check-icon mt-0.5"></i>
-                                <span class="text-gray-700 text-lg font-medium leading-snug" data-i18n="benefit_2">Dissolves tough stains in 20 minutes</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-2xl check-icon mt-0.5"></i>
-                                <span class="text-gray-700 text-lg font-medium leading-snug" data-i18n="benefit_3">Kills 99.9% of odor-causing bacteria</span>
-                            </li>
-                            <li class="flex items-start gap-3">
-                                <i class="fas fa-check-circle text-2xl check-icon mt-0.5"></i>
-                                <span class="text-gray-700 text-lg font-medium leading-snug" data-i18n="benefit_4">100% septic tank-friendly</span>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <div class="text-sm text-gray-400 italic lg:text-left">
-                        *Limited stock available due to high demand.
-                    </div>
-
+                    <p data-i18n="sect1_desc2" class="text-sm md:text-base text-slate-600 leading-relaxed border-l-4 border-emerald-500 pl-4 bg-slate-50 py-2">
+                        Se trata de un enfoque moderno, práctico y alineado al funcionamiento natural del organismo.
+                    </p>
                 </div>
-            </div>
-        </main>
-
-        <!-- REGION SELECTOR SECTION -->
-        <section id="region-selector" class="bg-gray-50 py-16 px-5 border-t border-gray-100 scroll-mt-24">
-            <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-4 tracking-tight" data-i18n="region_title">Select Your Country</h2>
-                    <p class="text-base text-gray-600 font-medium max-w-2xl mx-auto" data-i18n="region_subtitle">We ship worldwide via express courier. Choose your delivery destination below to check availability and activate your discount.</p>
-                </div>
-
-                <!-- Country Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    
-                    <!-- Country Item Template -->
-                    <button onclick="checkStock('Argentina')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Argentina</span>
-                            <img src="https://flagcdn.com/w40/ar.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="AR">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Australia')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Australia</span>
-                            <img src="https://flagcdn.com/w40/au.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="AU">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Austria')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Austria</span>
-                            <img src="https://flagcdn.com/w40/at.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="AT">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Belgium')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Belgium</span>
-                            <img src="https://flagcdn.com/w40/be.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="BE">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Brazil')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Brazil</span>
-                            <img src="https://flagcdn.com/w40/br.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="BR">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Canada')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Canada</span>
-                            <img src="https://flagcdn.com/w40/ca.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="CA">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-yellow-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-yellow-600 tracking-wider">Selling Fast</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Chile')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Chile</span>
-                            <img src="https://flagcdn.com/w40/cl.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="CL">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Denmark')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Denmark</span>
-                            <img src="https://flagcdn.com/w40/dk.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="DK">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Finland')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Finland</span>
-                            <img src="https://flagcdn.com/w40/fi.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="FI">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('France')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">France</span>
-                            <img src="https://flagcdn.com/w40/fr.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="FR">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Germany')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Germany</span>
-                            <img src="https://flagcdn.com/w40/de.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="DE">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Greece')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Greece</span>
-                            <img src="https://flagcdn.com/w40/gr.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="GR">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Ireland')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Ireland</span>
-                            <img src="https://flagcdn.com/w40/ie.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="IE">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Israel')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Israel</span>
-                            <img src="https://flagcdn.com/w40/il.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="IL">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Italy')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Italy</span>
-                            <img src="https://flagcdn.com/w40/it.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="IT">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Mexico')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Mexico</span>
-                            <img src="https://flagcdn.com/w40/mx.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="MX">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Netherlands')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Netherlands</span>
-                            <img src="https://flagcdn.com/w40/nl.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="NL">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('New Zealand')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">New Zealand</span>
-                            <img src="https://flagcdn.com/w40/nz.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="NZ">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Norway')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Norway</span>
-                            <img src="https://flagcdn.com/w40/no.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="NO">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Portugal')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Portugal</span>
-                            <img src="https://flagcdn.com/w40/pt.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="PT">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('South Africa')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">South Africa</span>
-                            <img src="https://flagcdn.com/w40/za.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="ZA">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Spain')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Spain</span>
-                            <img src="https://flagcdn.com/w40/es.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="ES">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Sweden')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Sweden</span>
-                            <img src="https://flagcdn.com/w40/se.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="SE">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('Switzerland')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">Switzerland</span>
-                            <img src="https://flagcdn.com/w40/ch.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="CH">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('United Kingdom')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">United Kingdom</span>
-                            <img src="https://flagcdn.com/w40/gb.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="GB">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-green-600 tracking-wider">Available</span>
-                        </div>
-                    </button>
-
-                    <button onclick="checkStock('United States')" class="country-card bg-white p-4 rounded-xl border border-gray-200 shadow-sm flex flex-col justify-between h-24 text-left group">
-                        <div class="flex items-center justify-between w-full mb-2">
-                            <span class="text-sm font-bold text-gray-800 group-hover:text-brand-primary truncate">United States</span>
-                            <img src="https://flagcdn.com/w40/us.png" class="w-6 h-auto rounded shadow-sm flex-shrink-0" alt="US">
-                        </div>
-                        <div class="flex items-center gap-1.5 mt-auto">
-                            <span class="w-1.5 h-1.5 bg-red-500 rounded-full animate-pulse"></span>
-                            <span class="text-[10px] uppercase font-bold text-red-600 tracking-wider">Low Stock</span>
-                        </div>
-                    </button>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- REVIEWS IMAGE -->
-        <div class="w-full px-5 flex justify-center pb-12 bg-gray-50">
-            <img src="images/reviews.jpg" class="w-full max-w-4xl rounded-xl shadow-lg border border-gray-100" alt="Customer Reviews">
-        </div>
-
-        <!-- FOOTER -->
-        <footer class="bg-white border-t border-gray-100 py-12 px-5">
-            <div class="max-w-7xl mx-auto flex flex-col items-center">
                 
-                <div class="mb-6 opacity-70 hover:opacity-100 transition-opacity duration-300">
-                     <img src="images/fizzclean-logo.png" alt="FizzClean Logo" class="h-8 md:h-10 w-auto grayscale" onerror="this.style.display='none';">
+                <div class="order-1 md:order-2 transform rotate-1 hover:rotate-0 transition-transform duration-500 flex justify-center items-center relative">
+                    <img 
+                        src="/images/Balancio.png" 
+                        alt="Botella del suplemento Balancio" 
+                        class="w-3/4 md:w-full max-w-[280px] md:max-w-md h-auto object-cover"
+                        onerror="this.onerror=null; this.src='https://placehold.co/400x500/059669/ffffff?text=Balancio+Product+Image';"
+                    >
                 </div>
-
-                <nav class="flex flex-wrap justify-center gap-6 mb-6 text-sm text-gray-500 font-medium">
-                    <button onclick="openModal('privacy')" class="hover:text-brand-primary transition">Privacy Policy</button>
-                    <button onclick="openModal('terms')" class="hover:text-brand-primary transition">Terms of Service</button>
-                    <button onclick="openModal('shipping')" class="hover:text-brand-primary transition">Shipping Policy</button>
-                    <button onclick="openModal('contact')" class="hover:text-brand-primary transition">Contact Us</button>
-                </nav>
-                
-                <div class="text-xs text-gray-400">
-                    © 2025 FizzClean. All rights reserved.
-                </div>
-            </div>
-        </footer>
-
-        <!-- MODAL -->
-        <div id="info-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
-            <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[85vh] flex flex-col relative animate-fade-in overflow-hidden">
-                <div class="p-4 border-b border-gray-100 flex justify-between items-center bg-gray-50">
-                    <span class="text-xs font-bold uppercase text-gray-400 tracking-wider">Information</span>
-                    <button onclick="closeModal()" class="text-gray-400 hover:text-gray-900 transition p-1">
-                        <i class="fas fa-times text-lg"></i>
-                    </button>
-                </div>
-                <div id="modal-content" class="p-6 md:p-8 overflow-y-auto text-gray-600 leading-relaxed text-sm md:text-base"></div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Scripts -->
+    <!-- Divider -->
+    <div class="h-12 md:h-16 bg-gradient-to-b from-white to-slate-100"></div>
+
+    <!-- Country Selection Section -->
+    <section id="countries" class="py-10 md:py-16 px-4 bg-slate-100">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-5 md:mb-6">
+                <i data-lucide="globe" class="w-3 h-3 md:w-4 md:h-4"></i> <span data-i18n="choose_country">Elige tu país</span>
+            </div>
+            
+            <h2 data-i18n="where_are_you" class="text-2xl md:text-4xl font-bold text-slate-800 mb-3 md:mb-5">
+                ¿Dónde estás?
+            </h2>
+            <p data-i18n="select_desc" class="text-sm md:text-base text-slate-600 max-w-2xl mx-auto mb-6 md:mb-10 px-2">
+                Para garantizar que recibas información adecuada a tu región — incluyendo idioma, disponibilidad y condiciones — selecciona el país abajo.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-5">
+                
+                <!-- Eslováquia (Com Link + Stock + Translated Name) -->
+                <button 
+                    onclick="selectCountry('sk', 'https://iy8ib.doctordominion.com/l')" 
+                    id="btn-sk"
+                    class="country-btn group relative bg-white rounded-2xl p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-emerald-500 focus:outline-none w-full flex items-center text-left"
+                >
+                    <div class="shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://flagcdn.com/w160/sk.png" alt="Bandera Eslovaquia" class="h-10 w-14 object-cover rounded-sm">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 data-i18n="country_sk" class="text-lg font-bold text-slate-800 group-hover:text-emerald-700 transition-colors country-title leading-tight mb-1">Eslovaquia</h3>
+                        
+                        <!-- Stock Label -->
+                        <div class="inline-flex items-center gap-1.5 bg-red-50 px-2 py-0.5 rounded-full border border-red-100">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                            </span>
+                            <span data-i18n="stock_warning" class="text-[10px] font-bold text-red-600 uppercase tracking-wide">Stock Limitado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark absolute top-1/2 right-4 -translate-y-1/2 text-emerald-500 hidden animate-fade-in">
+                        <i data-lucide="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div class="arrow absolute top-1/2 right-4 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-emerald-500"></i>
+                    </div>
+                </button>
+
+                <!-- Grécia (Com Link + Stock + Translated Name) -->
+                <button 
+                    onclick="selectCountry('gr', 'https://seu8n.doctordominion.com/l')" 
+                    id="btn-gr"
+                    class="country-btn group relative bg-white rounded-2xl p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-emerald-500 focus:outline-none w-full flex items-center text-left"
+                >
+                    <div class="shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://flagcdn.com/w160/gr.png" alt="Bandera Grecia" class="h-10 w-14 object-cover rounded-sm">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 data-i18n="country_gr" class="text-lg font-bold text-slate-800 group-hover:text-emerald-700 transition-colors country-title leading-tight mb-1">Grecia</h3>
+
+                        <!-- Stock Label -->
+                        <div class="inline-flex items-center gap-1.5 bg-red-50 px-2 py-0.5 rounded-full border border-red-100">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                            </span>
+                            <span data-i18n="stock_warning" class="text-[10px] font-bold text-red-600 uppercase tracking-wide">Stock Limitado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark absolute top-1/2 right-4 -translate-y-1/2 text-emerald-500 hidden animate-fade-in">
+                        <i data-lucide="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div class="arrow absolute top-1/2 right-4 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-emerald-500"></i>
+                    </div>
+                </button>
+
+                <!-- Espanha (Sem Link + Stock + Translated Name) -->
+                <button 
+                    onclick="selectCountry('es')" 
+                    id="btn-es"
+                    class="country-btn group relative bg-white rounded-2xl p-4 md:p-5 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 border-2 border-transparent hover:border-emerald-500 focus:outline-none w-full flex items-center text-left"
+                >
+                    <div class="shrink-0 mr-4 group-hover:scale-105 transition-transform duration-300">
+                        <img src="https://flagcdn.com/w160/es.png" alt="Bandera España" class="h-10 w-14 object-cover rounded-sm">
+                    </div>
+                    <div class="flex-grow">
+                        <h3 data-i18n="country_es" class="text-lg font-bold text-slate-800 group-hover:text-emerald-700 transition-colors country-title leading-tight mb-1">España</h3>
+
+                        <!-- Stock Label -->
+                        <div class="inline-flex items-center gap-1.5 bg-red-50 px-2 py-0.5 rounded-full border border-red-100">
+                            <span class="relative flex h-2 w-2">
+                                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                            </span>
+                            <span data-i18n="stock_warning" class="text-[10px] font-bold text-red-600 uppercase tracking-wide">Stock Limitado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="checkmark absolute top-1/2 right-4 -translate-y-1/2 text-emerald-500 hidden animate-fade-in">
+                        <i data-lucide="check-circle" class="w-6 h-6"></i>
+                    </div>
+                    <div class="arrow absolute top-1/2 right-4 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <i data-lucide="arrow-right" class="w-5 h-5 text-emerald-500"></i>
+                    </div>
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-6 md:py-10 px-4">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
+            <div class="flex items-center gap-2">
+                <div class="bg-slate-800 p-1.5 rounded-lg">
+                    <i data-lucide="leaf" class="text-emerald-500 w-4 h-4"></i>
+                </div>
+                <span class="text-lg md:text-xl font-bold text-white tracking-tight">Balancio</span>
+            </div>
+            <div class="text-xs md:text-sm text-center md:text-right">
+                © <span id="year"></span> Balancio Nutrition. <span data-i18n="rights">Todos los derechos reservados.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Logic Script -->
     <script>
-        // ==========================================
-        // DYNAMIC DATE & TRANSLATION LOGIC
-        // ==========================================
-        function getDynamicDate(lang) {
-            const date = new Date();
-            const year = date.getFullYear();
-            if (lang === 'pt' || lang.startsWith('pt')) {
-                const day = date.getDate();
-                const months = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
-                return `Atenção: estoque limitado. ${day} de ${months[date.getMonth()]} de ${year}.`;
-            } else {
-                const options = { month: 'long', day: 'numeric', year: 'numeric' };
-                return `Attention: Due to high demand, stock is limited. ${date.toLocaleDateString('en-US', options)}.`;
-            }
-        }
+        // Initialize Icons
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
 
         const translations = {
-            "en": {
-                "headline": "Insta-Action FizzClean Foam for Sparkling Clean Toilet with Zero Effort",
-                "subheadline_main": "Let foam handle the dirty work for you – keep your toilet spotless without lifting a finger!",
-                "rating_text": "4.7 | 1000+ Verified Reviews",
-                "benefit_1": "Deep cleans 100% of your toilet",
-                "benefit_2": "Dissolves tough stains in 20 minutes",
-                "benefit_3": "Kills 99.9% of odor-causing bacteria",
-                "benefit_4": "100% septic tank-friendly",
-                "discount_badge": "-70% Discount",
-                "region_title": "Select Your Country",
-                "region_subtitle": "We ship worldwide via express courier. Choose your delivery destination below."
+            'es': {
+                'select_region': 'Seleccionar región',
+                'new_release': 'Nuevo Lanzamiento',
+                'hero_title': 'Una nueva forma de apoyar <span class="text-emerald-600">el adelgazamiento</span>',
+                'hero_desc': 'Balancio es un suplemento nutricional desarrollado para ayudar al cuerpo a utilizar la grasa como fuente de energía, respetando los procesos naturales del metabolismo.',
+                'sect1_title': 'Equilibrio Natural',
+                'sect1_desc1': 'Su fórmula fue pensada para personas que desean perder peso de forma equilibrada, sin recurrir a dietas extremas, procedimientos invasivos o soluciones temporales.',
+                'sect1_desc2': 'Se trata de un enfoque moderno, práctico y alineado al funcionamiento natural del organismo.',
+                'choose_country': 'Elige tu país',
+                'where_are_you': '¿Dónde estás?',
+                'select_desc': 'Para garantizar que recibas información adecuada a tu región — incluyendo idioma, disponibilidad y condiciones — selecciona el país abajo.',
+                'rights': 'Todos los derechos reservados.',
+                'stock_warning': 'Stock Limitado',
+                'country_sk': 'Eslovaquia',
+                'country_gr': 'Grecia',
+                'country_es': 'España'
             },
-            "pt": {
-                "headline": "Espuma FizzClean de Ação Instantânea para um Banheiro Brilhante sem Esforço",
-                "subheadline_main": "Deixe a espuma fazer o trabalho sujo por você – mantenha seu vaso impecável sem levantar um dedo!",
-                "rating_text": "4.7 | 1000+ Avaliações Verificadas",
-                "benefit_1": "Limpa profundamente 100% do seu vaso",
-                "benefit_2": "Dissolve manchas difíceis em 20 minutos",
-                "benefit_3": "Mata 99,9% das bactérias causadoras de odor",
-                "benefit_4": "100% seguro para fossa séptica",
-                "discount_badge": "-70% de Desconto",
-                "region_title": "Selecione o Seu País",
-                "region_subtitle": "Enviamos para todo o mundo via correio expresso. Escolha seu destino abaixo."
+            'sk': {
+                'select_region': 'Vybrať región',
+                'new_release': 'Nové vydanie',
+                'hero_title': 'Nový spôsob podpory <span class="text-emerald-600">chudnutia</span>',
+                'hero_desc': 'Balancio je výživový doplnok navrhnutý tak, aby pomohol telu využívať tuk ako zdroj energie, pričom rešpektuje prirodzené procesy metabolizmu.',
+                'sect1_title': 'Prírodná rovnováha',
+                'sect1_desc1': 'Jeho zloženie bolo navrhnuté pre ľudí, ktorí chcú schudnúť vyváženým spôsobom, bez extrémnych diét, invazívnych zákrokov alebo dočasných riešení.',
+                'sect1_desc2': 'Ide o moderný, praktický prístup v súlade s prirodzeným fungovaním organizmu.',
+                'choose_country': 'Vyberte krajinu',
+                'where_are_you': 'Kde sa nachádzate?',
+                'select_desc': 'Aby ste sa uistili, že dostanete informácie vhodné pre váš región – vrátane jazyka, dostupnosti a podmienok – vyberte krajinu nižšie.',
+                'rights': 'Všetky práva vyhradené.',
+                'stock_warning': 'Obmedzené zásoby',
+                'country_sk': 'Slovensko',
+                'country_gr': 'Grécko',
+                'country_es': 'Španielsko'
+            },
+            'gr': {
+                'select_region': 'Επιλογή περιοχής',
+                'new_release': 'Νέα Κυκλοφορία',
+                'hero_title': 'Ένας νέος τρόπος στήριξης <span class="text-emerald-600">της απώλειας βάρους</span>',
+                'hero_desc': 'Το Balancio είναι ένα διατροφικό συμπλήρωμα που σχεδιάστηκε για να βοηθήσει το σώμα να χρησιμοποιεί το λίπος ως πηγή ενέργειας, σέβοντας τις φυσικές διαδικασίες του μεταβολισμού.',
+                'sect1_title': 'Φυσική Ισορροπία',
+                'sect1_desc1': 'Η σύνθεσή του σχεδιάστηκε για άτομα που επιθυμούν να χάσουν βάρος με ισορροπημένο τρόπο, χωρίς ακραίες δίαιτες, επεμβατικές διαδικασίες ή προσωρινές λύσεις.',
+                'sect1_desc2': 'Πρόκειται για μια σύγχρονη, πρακτική προσέγγιση ευθυγραμμισμένη με τη φυσική λειτουργία του οργανισμού.',
+                'choose_country': 'Επιλέξτε χώρα',
+                'where_are_you': 'Πού βρίσκεστε;',
+                'select_desc': 'Για να βεβαιωθείτε ότι λαμβάνετε πληροφορίες κατάλληλες για την περιοχή σας — συμπεριλαμβανομένης της γλώσσας, της διαθεσιμότητας και των όρων — επιλέξτε τη χώρα παρακάτω.',
+                'rights': 'Με επιφύλαξη παντός δικαιώματος.',
+                'stock_warning': 'Περιορισμένο απόθεμα',
+                'country_sk': 'Σλοβακία',
+                'country_gr': 'Ελλάδα',
+                'country_es': 'Ισπανία'
             }
         };
 
-        function detectAndTranslate() {
-            const browserLang = navigator.language || navigator.userLanguage;
-            const langCode = browserLang.split('-')[0];
-            const content = translations[langCode] || translations['en'];
-            
-            document.querySelectorAll('[data-i18n]').forEach(element => {
-                const key = element.getAttribute('data-i18n');
-                if (content[key]) element.innerHTML = content[key];
+        function selectCountry(countryId, link) {
+            const lang = countryId; 
+
+            // 1. Logic for TRANSLATION (Always happens)
+            if(translations[lang]) {
+                const elements = document.querySelectorAll('[data-i18n]');
+                elements.forEach(el => {
+                    const key = el.getAttribute('data-i18n');
+                    if(translations[lang][key]) {
+                        el.innerHTML = translations[lang][key];
+                    }
+                });
+                
+                document.documentElement.lang = lang === 'gr' ? 'el' : lang;
+            }
+
+            // 2. Logic for VISUAL BUTTON SELECTION
+            const buttons = document.querySelectorAll('.country-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-emerald-500', 'ring-4', 'ring-emerald-200', 'scale-105');
+                btn.classList.add('border-transparent');
+                
+                const title = btn.querySelector('.country-title');
+                title.classList.remove('text-emerald-700');
+                title.classList.add('text-slate-800');
+
+                btn.querySelector('.checkmark').classList.add('hidden');
+                btn.querySelector('.arrow').classList.remove('hidden'); 
             });
-        }
-        
-        document.addEventListener('DOMContentLoaded', detectAndTranslate);
 
-        // ==========================================
-        // CHECKOUT & ROUTING
-        // ==========================================
-        const legalContent = {
-            privacy: `<h2 class="text-xl font-bold mb-4">Privacy Policy</h2><p>Your privacy is important to us...</p>`,
-            terms: `<h2 class="text-xl font-bold mb-4">Terms of Service</h2><p>By using this site, you agree...</p>`,
-            shipping: `<h2 class="text-xl font-bold mb-4">Shipping Policy</h2><p>Orders are processed within 24-48 hours...</p>`,
-            contact: `<h2 class="text-xl font-bold mb-4">Contact Us</h2><p>Email: support@fizzclean.shop</p>`
-        };
+            const selectedBtn = document.getElementById('btn-' + countryId);
+            if (selectedBtn) {
+                selectedBtn.classList.remove('border-transparent');
+                selectedBtn.classList.add('border-emerald-500', 'ring-4', 'ring-emerald-200', 'scale-105');
+                
+                const title = selectedBtn.querySelector('.country-title');
+                title.classList.remove('text-slate-800');
+                title.classList.add('text-emerald-700');
 
-        function checkStock(country) {
-            const urlMap = {
-                'United States': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49329',
-                'United Kingdom': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49332',
-                'Canada': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49335',
-                'Australia': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49338',
-                'New Zealand': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49338',
-                'France': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49344',
-                'Netherlands': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49350',
-                'Germany': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Austria': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Belgium': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Denmark': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Finland': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Greece': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Ireland': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Italy': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Portugal': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Spain': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Sweden': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Norway': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341',
-                'Switzerland': 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49341'
-            };
-            // Default link for non-mapped countries
-            const defaultUrl = 'https://www.fasttrack37.com/PM7HK3TH/2RQ7DGX9/?uid=49329';
-            window.location.href = urlMap[country] || defaultUrl;
+                selectedBtn.querySelector('.checkmark').classList.remove('hidden');
+            }
+
+            // 3. Logic for REDIRECT (Only if a link is provided - e.g. click event)
+            if (link) {
+                window.location.href = link;
+            }
         }
 
-        function openModal(type) {
-            const modal = document.getElementById('info-modal');
-            const content = document.getElementById('modal-content');
-            content.innerHTML = legalContent[type] || "<p>Loading...</p>";
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('info-modal');
-            modal.classList.add('hidden');
-            modal.classList.remove('flex');
-            document.body.style.overflow = '';
-        }
-
-        document.getElementById('info-modal').addEventListener('click', function(e) {
-            if (e.target === this) closeModal();
+        // Auto-detect language from URL parameter (safe script) - TRANSLATION ONLY
+        // Runs as soon as DOM is ready for immediate translation
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            // Detect "lang" or "country" parameter from URL
+            const lang = urlParams.get('lang') || urlParams.get('country');
+            
+            if (lang && ['sk', 'gr', 'es'].includes(lang)) {
+                // Call selectCountry WITHOUT link argument to prevent redirect on load
+                // This ensures only translation and visual selection happens
+                selectCountry(lang);
+            }
         });
     </script>
 </body>
